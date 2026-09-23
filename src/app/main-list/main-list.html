@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="TaskFlow - Aplicación para gestionar tareas"
+    >
+
+    <title>TaskFlow | Gestor de tareas</title>
+</head>
+
+<body>
+
+    <!-- =====================================================
+         APLICACIÓN
+    ====================================================== -->
+
+    <div class="app">
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside class="sidebar">
+
+            <!-- LOGO -->
+
+            <div class="logo">
+
+                <div class="logo-icon">
+                    ✓
+                </div>
+
+                <span>
+                    TaskFlow
+                </span>
+
+            </div>
+
+
+            <!-- NAVEGACIÓN -->
+
+            <nav class="navigation">
+
+                <p class="nav-title">
+                    Menú principal
+                </p>
+
+
+                <a href="#" class="nav-item active">
+
+                    <span class="nav-icon">
+                        ⌂
+                    </span>
+
+                    <span>
+                        Inicio
+                    </span>
+
+                </a>
+
+
+                <a href="#" class="nav-item">
+
+                    <span class="nav-icon">
+                        ☷
+                    </span>
+
+                    <span>
+                        Mis tareas
+                    </span>
+
+                </a>
+
+
+                <a href="#" class="nav-item">
+
+                    <span class="nav-icon">
+                        ▣
+                    </span>
+
+                    <span>
+                        Calendario
+                    </span>
+
+                </a>
+
+
+                <a href="#" class="nav-item">
+
+                    <span class="nav-icon">
+                        ✓
+                    </span>
+
+                    <span>
+                        Completadas
+                    </span>
+
+                </a>
+
+
+                <a href="#" class="nav-item">
+
+                    <span class="nav-icon">
+                        ⚙
+                    </span>
+
+                    <span>
+                        Configuración
+                    </span>
+
+                </a>
+
+            </nav>
+
+
+            <!-- MENSAJE DEL SIDEBAR -->
+
+            <div class="sidebar-footer">
+
+                <div class="sidebar-footer-icon">
+                    ★
+                </div>
+
+                <p>
+                    Grandes logros comienzan
+                    con pequeñas tareas.
+                </p>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =================================================
+             CONTENIDO PRINCIPAL
+        ================================================== -->
+
+        <main class="main">
+
+
+            <!-- =================================================
+                 HEADER
+            ================================================== -->
+
+            <header class="header">
+
+                <!-- BUSCADOR -->
+
+                <div class="search">
+
+                    <span class="search-icon">
+                        🔍
+                    </span>
+
+                    <input
+                        type="search"
+                        placeholder="Buscar tareas..."
+                        aria-label="Buscar tareas"
+                    >
+
+                </div>
+
+
+                <!-- PERFIL -->
+
+                <div class="header-right">
+
+                    <button
+                        class="notification"
+                        aria-label="Notificaciones"
+                    >
+
+                        🔔
+
+                        <span class="notification-badge">
+                            3
+                        </span>
+
+                    </button>
+
+
+                    <div class="profile">
+
+                        <div class="avatar">
+                            DV
+                        </div>
+
+                        <span>
+                            Diery Valencia
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================================
+                 CONTENIDO
+            ================================================== -->
+
+            <section class="content">
+
+
+                <!-- ENCABEZADO DE PÁGINA -->
+
+                <div class="page-header">
+
+                    <div>
+
+                        <h1>
+                            ¡Hola, Diery!
+                        </h1>
+
+                        <p>
+                            Aquí tienes un resumen de tus tareas
+                            y tu progreso de hoy.
+                        </p>
+
+                    </div>
+
+
+                    <div class="date">
+                        📅 Lunes, 22 de septiembre de 2025
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     DASHBOARD
+                ================================================== -->
+
+                <div class="dashboard">
+
+
+                    <!-- =================================================
+                         COLUMNA PRINCIPAL
+                    ================================================== -->
+
+                    <div class="left-column">
+
+
+                        <!-- =================================================
+                             ESTADÍSTICAS
+                        ================================================== -->
+
+                        <section class="stats">
+
+
+                            <!-- TOTAL -->
+
+                            <article class="stat-card">
+
+                                <div class="stat-top">
+
+                                    <div class="stat-title">
+                                        Total de tareas
+                                    </div>
+
+                                    <div class="stat-icon blue">
+                                        ☷
+                                    </div>
+
+                                </div>
+
+                                <div class="stat-number">
+                                    6
+                                </div>
+
+                                <div class="stat-description">
+                                    3 pendientes · 3 completadas
+                                </div>
+
+                            </article>
+
+
+                            <!-- EN PROGRESO -->
+
+                            <article class="stat-card">
+
+                                <div class="stat-top">
+
+                                    <div class="stat-title">
+                                        En progreso
+                                    </div>
+
+                                    <div class="stat-icon yellow">
+                                        ◷
+                                    </div>
+
+                                </div>
+
+                                <div class="stat-number">
+                                    2
+                                </div>
+
+                                <div class="stat-description">
+                                    Tareas en curso
+                                </div>
+
+                            </article>
+
+
+                            <!-- COMPLETADAS -->
+
+                            <article class="stat-card">
+
+                                <div class="stat-top">
+
+                                    <div class="stat-title">
+                                        Completadas
+                                    </div>
+
+                                    <div class="stat-icon green">
+                                        ✓
+                                    </div>
+
+                                </div>
+
+                                <div class="stat-number">
+                                    3
+                                </div>
+
+                                <div class="stat-description">
+                                    ¡Buen trabajo!
+                                </div>
+
+                            </article>
+
+
+                            <!-- VENCIDAS -->
+
+                            <article class="stat-card">
+
+                                <div class="stat-top">
+
+                                    <div class="stat-title">
+                                        Vencidas
+                                    </div>
+
+                                    <div class="stat-icon red">
+                                        !
+                                    </div>
+
+                                </div>
+
+                                <div class="stat-number">
+                                    1
+                                </div>
+
+                                <div class="stat-description">
+                                    Requiere atención
+                                </div>
+
+                            </article>
+
+                        </section>
+
+
+                        <!-- =================================================
+                             NUEVA TAREA
+                        ================================================== -->
+
+                        <section class="card">
+
+                            <h2 class="card-title">
+                                Agregar nueva tarea
+                            </h2>
+
+
+                            <form class="task-form">
+
+                                <div class="form-group full-width">
+
+                                    <label for="task-title">
+                                        Título
+                                    </label>
+
+                                    <input
+                                        id="task-title"
+                                        type="text"
+                                        class="input"
+                                        placeholder="Escribe el título de la tarea..."
+                                    >
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="task-date">
+                                        Fecha
+                                    </label>
+
+                                    <input
+                                        id="task-date"
+                                        type="date"
+                                        class="input"
+                                    >
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="task-priority">
+                                        Prioridad
+                                    </label>
+
+                                    <select
+                                        id="task-priority"
+                                        class="input"
+                                    >
+
+                                        <option value="">
+                                            Seleccionar
+                                        </option>
+
+                                        <option value="high">
+                                            Alta
+                                        </option>
+
+                                        <option value="medium">
+                                            Media
+                                        </option>
+
+                                        <option value="low">
+                                            Baja
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="form-group button-group">
+
+                                    <label>
+                                        &nbsp;
+                                    </label>
+
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                    >
+                                        + Agregar
+                                    </button>
+
+                                </div>
+
+                            </form>
+
+                        </section>
+
+
+                        <!-- =================================================
+                             LISTA DE TAREAS
+                        ================================================== -->
+
+                        <section class="card">
+
+                            <div class="task-header">
+
+                                <h2 class="card-title">
+                                    Lista de tareas
+                                </h2>
+
+
+                                <div class="filters">
+
+                                    <button class="filter active">
+                                        Todas
+                                    </button>
+
+                                    <button class="filter">
+                                        Pendientes
+                                    </button>
+
+                                    <button class="filter">
+                                        En progreso
+                                    </button>
+
+                                    <button class="filter">
+                                        Completadas
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="task-list">
+
+
+                                <!-- TAREA 1 -->
+
+                                <article class="task completed">
+
+                                    <input
+                                        type="checkbox"
+                                        class="task-check"
+                                        checked
+                                    >
+
+
+                                    <div class="task-content">
+
+                                        <h3 class="task-title">
+                                            Configurar entorno de desarrollo
+                                        </h3>
+
+                                        <p class="task-description">
+                                            Instalar las herramientas necesarias
+                                            para el proyecto.
+                                        </p>
+
+
+                                        <div class="task-meta">
+
+                                            <span class="tag tag-blue">
+                                                Trabajo
+                                            </span>
+
+                                            <span class="priority high">
+                                                🚩 Alta
+                                            </span>
+
+                                            <span class="task-date">
+                                                📅 22 sep 2025
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <button
+                                        class="task-actions"
+                                        aria-label="Más opciones"
+                                    >
+                                        ⋯
+                                    </button>
+
+                                </article>
+
+
+                                <!-- TAREA 2 -->
+
+                                <article class="task">
+
+                                    <input
+                                        type="checkbox"
+                                        class="task-check"
+                                    >
+
+
+                                    <div class="task-content">
+
+                                        <h3 class="task-title">
+                                            Diseñar la interfaz de usuario
+                                        </h3>
+
+                                        <p class="task-description">
+                                            Crear los mockups de la aplicación.
+                                        </p>
+
+
+                                        <div class="task-meta">
+
+                                            <span class="tag tag-purple">
+                                                Diseño
+                                            </span>
+
+                                            <span class="priority medium">
+                                                🚩 Media
+                                            </span>
+
+                                            <span class="task-date">
+                                                📅 23 sep 2025
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <button
+                                        class="task-actions"
+                                        aria-label="Más opciones"
+                                    >
+                                        ⋯
+                                    </button>
+
+                                </article>
+
+
+                                <!-- TAREA 3 -->
+
+                                <article class="task">
+
+                                    <input
+                                        type="checkbox"
+                                        class="task-check"
+                                    >
+
+
+                                    <div class="task-content">
+
+                                        <h3 class="task-title">
+                                            Desarrollar el backend
+                                        </h3>
+
+                                        <p class="task-description">
+                                            Implementar la API y la lógica
+                                            de negocio.
+                                        </p>
+
+
+                                        <div class="task-meta">
+
+                                            <span class="tag tag-green">
+                                                Desarrollo
+                                            </span>
+
+                                            <span class="priority high">
+                                                🚩 Alta
+                                            </span>
+
+                                            <span class="task-date">
+                                                📅 24 sep 2025
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <button
+                                        class="task-actions"
+                                        aria-label="Más opciones"
+                                    >
+                                        ⋯
+                                    </button>
+
+                                </article>
+
+
+                                <!-- TAREA 4 -->
+
+                                <article class="task">
+
+                                    <input
+                                        type="checkbox"
+                                        class="task-check"
+                                    >
+
+
+                                    <div class="task-content">
+
+                                        <h3 class="task-title">
+                                            Pruebas unitarias
+                                        </h3>
+
+                                        <p class="task-description">
+                                            Validar el funcionamiento
+                                            de los módulos.
+                                        </p>
+
+
+                                        <div class="task-meta">
+
+                                            <span class="tag tag-blue">
+                                                Testing
+                                            </span>
+
+                                            <span class="priority medium">
+                                                🚩 Media
+                                            </span>
+
+                                            <span class="task-date">
+                                                📅 25 sep 2025
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <button
+                                        class="task-actions"
+                                        aria-label="Más opciones"
+                                    >
+                                        ⋯
+                                    </button>
+
+                                </article>
+
+
+                                <!-- TAREA 5 -->
+
+                                <article class="task completed">
+
+                                    <input
+                                        type="checkbox"
+                                        class="task-check"
+                                        checked
+                                    >
+
+
+                                    <div class="task-content">
+
+                                        <h3 class="task-title">
+                                            Documentar el proyecto
+                                        </h3>
+
+                                        <p class="task-description">
+                                            Crear la documentación técnica
+                                            y de usuario.
+                                        </p>
+
+
+                                        <div class="task-meta">
+
+                                            <span class="tag tag-purple">
+                                                Documentación
+                                            </span>
+
+                                            <span class="priority low">
+                                                🚩 Baja
+                                            </span>
+
+                                            <span class="task-date">
+                                                📅 21 sep 2025
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <button
+                                        class="task-actions"
+                                        aria-label="Más opciones"
+                                    >
+                                        ⋯
+                                    </button>
+
+                                </article>
+
+
+                                <!-- TAREA 6 -->
+
+                                <article class="task">
+
+                                    <input
+                                        type="checkbox"
+                                        class="task-check"
+                                    >
+
+
+                                    <div class="task-content">
+
+                                        <h3 class="task-title">
+                                            Deploy en producción
+                                        </h3>
+
+                                        <p class="task-description">
+                                            Publicar la aplicación
+                                            en el servidor.
+                                        </p>
+
+
+                                        <div class="task-meta">
+
+                                            <span class="tag tag-cyan">
+                                                DevOps
+                                            </span>
+
+                                            <span class="priority high">
+                                                🚩 Alta
+                                            </span>
+
+                                            <span class="task-date">
+                                                📅 26 sep 2025
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <button
+                                        class="task-actions"
+                                        aria-label="Más opciones"
+                                    >
+                                        ⋯
+                                    </button>
+
+                                </article>
+
+                            </div>
+
+                        </section>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         COLUMNA LATERAL DERECHA
+                    ================================================== -->
+
+                    <aside class="right-column">
+
+
+                        <!-- CALENDARIO -->
+
+                        <section class="card">
+
+                            <div class="calendar-header">
+
+                                <button class="calendar-arrow">
+                                    ‹
+                                </button>
+
+                                <h2 class="calendar-month">
+                                    Septiembre 2025
+                                </h2>
+
+                                <button class="calendar-arrow">
+                                    ›
+                                </button>
+
+                            </div>
+
+
+                            <div class="calendar-grid">
+
+                                <span class="calendar-day-name">L</span>
+                                <span class="calendar-day-name">M</span>
+                                <span class="calendar-day-name">X</span>
+                                <span class="calendar-day-name">J</span>
+                                <span class="calendar-day-name">V</span>
+                                <span class="calendar-day-name">S</span>
+                                <span class="calendar-day-name">D</span>
+
+                                <span class="calendar-day">1</span>
+                                <span class="calendar-day">2</span>
+                                <span class="calendar-day">3</span>
+                                <span class="calendar-day">4</span>
+                                <span class="calendar-day">5</span>
+                                <span class="calendar-day">6</span>
+                                <span class="calendar-day">7</span>
+
+                                <span class="calendar-day">8</span>
+                                <span class="calendar-day">9</span>
+                                <span class="calendar-day">10</span>
+                                <span class="calendar-day">11</span>
+                                <span class="calendar-day">12</span>
+                                <span class="calendar-day">13</span>
+                                <span class="calendar-day">14</span>
+
+                                <span class="calendar-day">15</span>
+                                <span class="calendar-day">16</span>
+                                <span class="calendar-day">17</span>
+                                <span class="calendar-day">18</span>
+                                <span class="calendar-day">19</span>
+                                <span class="calendar-day">20</span>
+                                <span class="calendar-day">21</span>
+
+                                <span class="calendar-day today">
+                                    22
+                                </span>
+
+                                <span class="calendar-day">23</span>
+                                <span class="calendar-day">24</span>
+                                <span class="calendar-day">25</span>
+                                <span class="calendar-day">26</span>
+                                <span class="calendar-day">27</span>
+                                <span class="calendar-day">28</span>
+
+                                <span class="calendar-day">29</span>
+                                <span class="calendar-day">30</span>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- PRIORIDADES -->
+
+                        <section class="card">
+
+                            <h2 class="card-title">
+                                ⚑ Prioridades
+                            </h2>
+
+
+                            <div class="priority-row">
+
+                                <span class="priority-name">
+                                    <span class="dot dot-red"></span>
+                                    Alta
+                                </span>
+
+                                <strong>3</strong>
+
+                            </div>
+
+
+                            <div class="priority-row">
+
+                                <span class="priority-name">
+                                    <span class="dot dot-yellow"></span>
+                                    Media
+                                </span>
+
+                                <strong>2</strong>
+
+                            </div>
+
+
+                            <div class="priority-row">
+
+                                <span class="priority-name">
+                                    <span class="dot dot-green"></span>
+                                    Baja
+                                </span>
+
+                                <strong>1</strong>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- ETIQUETAS -->
+
+                        <section class="card">
+
+                            <h2 class="card-title">
+                                🏷 Etiquetas
+                            </h2>
+
+
+                            <div class="tags">
+
+                                <span class="tag tag-blue">
+                                    Trabajo
+                                </span>
+
+                                <span class="tag tag-purple">
+                                    Diseño
+                                </span>
+
+                                <span class="tag tag-green">
+                                    Desarrollo
+                                </span>
+
+                                <span class="tag tag-blue">
+                                    Testing
+                                </span>
+
+                                <span class="tag tag-purple">
+                                    Documentación
+                                </span>
+
+                                <span class="tag tag-cyan">
+                                    DevOps
+                                </span>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- FRASE -->
+
+                        <section class="card quote-card">
+
+                            <div class="quote-icon">
+                                💡
+                            </div>
+
+                            <p>
+                                "La productividad no es hacer
+                                más cosas, sino hacer las cosas
+                                correctas."
+                            </p>
+
+                            <span>
+                                — Unknown
+                            </span>
+
+                        </section>
+
+                    </aside>
+
+                </div>
+
+
+                <!-- =================================================
+                     FOOTER
+                ================================================== -->
+
+                <footer class="footer">
+
+                    <span>
+                        <strong>TaskFlow</strong>
+                        · Tu gestor de tareas simple y eficiente
+                    </span>
+
+                    <span>
+                        Pasto, Nariño · Colombia
+                    </span>
+
+                </footer>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
