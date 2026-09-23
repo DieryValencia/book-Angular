@@ -3,6 +3,19 @@
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.22.
 
 ## Development server
+Create a new project: 
+```bash
+ng new <project-name>
+```
+
+Creates the base structure and downloads dependencies. 
+Enter the project folder:
+
+```bash 
+cd <project-name>
+```
+Allows you to locate the terminal within the working directory.
+
 
 To start a local development server, run:
 
